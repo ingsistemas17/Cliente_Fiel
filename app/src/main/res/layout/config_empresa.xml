@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/bg_principal"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/edtNombreEmprresa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_nombre_empresa"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorTextPrincipal"
+            android:textColorHint="@color/colorTextHintPrincipal" />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:textColor="@color/colorTextPrincipal"
+        android:id="@+id/EdtDescripcionEmpresa"
+        android:textColorHint="@color/colorTextHintPrincipal"
+        android:hint="@string/hint_descripcion_empresa"
+        android:layout_height="100dp" />
+    </LinearLayout>
+
+<!--    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:id="@+id/imageView"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:contentDescription="prueba"
+ />
+
+        </LinearLayout>-->
+
+
+    <Button
+        android:id="@+id/btnGuardaConfigEmpresa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/bg_btn_principal"
+        android:text="@string/btn_guardar"
+        android:textColor="@color/btn_principal" />
+
+</LinearLayout>

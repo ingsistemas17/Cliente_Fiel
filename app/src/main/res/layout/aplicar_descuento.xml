@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@color/bg_principal"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/edtDescuento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_Descuento"
+            android:inputType="textEmailAddress|text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorTextPrincipal"
+            android:textColorHint="@color/colorTextHintPrincipal" />
+
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnAplicaDescuento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/bg_btn_principal"
+            android:text="@string/btn_guardar"
+            android:textColor="@color/btn_principal" />
+
+        <Button
+            android:id="@+id/btnVerDescuentos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/bg_btn_principal"
+            android:text="@string/btn_verDescuentos"
+            android:textColor="@color/btn_principal" />
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
