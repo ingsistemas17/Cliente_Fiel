@@ -1,14 +1,25 @@
 <resources>
     <string name="app_name">Cliente Fiel</string>
     <string name="action_settings">Settings</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_password">Password</string>
-    <string name="hint_name">Fullname</string>
+
+
+
     <string name="btn_login">Inicia sesión</string>
-    <string name="btn_register">REGISTER</string>
-    <string name="btn_registro">Crea una cuenta</string>
+    <string name="btn_registro">Crear una cuenta</string>
     <string name="btn_link_to_login">Already registred! Login Me.</string>
     <string name="welcome">Welcome</string>
     <string name="btn_logout">LOGOUT</string>
+    <string name="btn_registrarse">Registrarse</string>
+
     <string name="name">Fullname</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_password">Contraseña</string>
+
+
+    <string name="hint_name">Nombres</string>
+    <string name="hint_lastname">Apellidos</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_Confirma_password">Confirmar Contraseña</string>
+
+
 </resources>
