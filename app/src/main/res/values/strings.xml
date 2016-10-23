@@ -21,10 +21,20 @@
     <string name="hint_name">Nombres</string>
     <string name="hint_lastname">Apellidos</string>
     <string name="hint_usuario">Usuario</string>
+    <string name="hint_cuenta">Cuenta</string>
     <string name="hint_Confirma_password">Confirmar Contraseña</string>
     <string name="hint_descripcion_empresa">Descripción Empresa</string>
 
     <string name="hint_nombre_empresa">Nombre empresa</string>
+
+
+
+    <string name="action_add_menu">Adicionar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_help">Ayuda</string>
+    <string name="action_about">Acerca de</string>
+
+
 
 
 

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#26ae90</color>
+    <color name="colorPrimary">#26ae90</color><!-- #26ae90-->
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="bg_principal">#e8f5e9</color>
+    <color name="bg_principal">#ffffff</color><!-- #e8f5e9-->
     <color name="colorTextPrincipal">#222222</color>
     <color name="colorTextHintPrincipal">#999999</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="bg_btn_principal">#26ae90</color>
+    <color name="bg_btn_principal">#26ae90</color> <!-- #26ae90-->
     <color name="bg_register">#2e3237</color>
     <color name="bg_main">#428bca</color>
-    <color name="white">#ffffff</color>
+    <color name="white">#e8f5e9</color>
     <color name="input_login">#222222</color>
     <color name="input_login_hint">#999999</color>
     <color name="input_register">#888888</color>
@@ -19,4 +19,7 @@
     <color name="btn_principal">#ffffff</color>
     <color name="lbl_name">#333333</color>
     <color name="btn_logut_bg">#ff6861</color>
+    <color name="txt_empresa">#999999</color>
+    <color name="txt_empresa_abierta">#26ae90</color>
+    <color name="txt_empresa_cerrada">#999999</color>
 </resources>

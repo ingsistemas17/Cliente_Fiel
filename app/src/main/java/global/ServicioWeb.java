@@ -31,12 +31,16 @@ import modelo.Cliente;
 /**
  * Created by carlos.morales on 24/09/2016.
  */
-public class ServicioWeb {
+public  class ServicioWeb {
 
     static String response = null;
     public final static int GET = 1;
     public final static int POST = 2;
     private static final String LOG_TAG = "Error";
+    public final static  String NAMESPACE = "http://tempuri.org/";
+    public final static  String URL="http://192.168.0.12:61731/WebService1.asmx";
+    public final static String METHOD_NAME = "";
+    public final static  String SOAP_ACTION = "http://tempuri.org/";
 
 public void serviceConexionGet ()
 {
@@ -46,7 +50,7 @@ public void serviceConexionGet ()
 
     public void serviceConexionPut ()
     {
-        TareaWSInsercion2 pruebaPut =  new TareaWSInsercion2();
+        webServicesPut pruebaPut =  new webServicesPut();
 
         pruebaPut.execute();
     }
@@ -114,15 +118,15 @@ private class NetworkOperationAsyncTask extends AsyncTask<Void, Void, String> {
 
 
                 Cliente cli = new Cliente();
-                cli.idCliente = Integer.parseInt(resSoap.getProperty(0).toString());
-                cli.primerNombre = resSoap.getProperty(1).toString();
-                cli.segundoNombre = resSoap.getProperty(2).toString();
-            cli.primerApellido = resSoap.getProperty(3).toString();
-            cli.segundoApellido = resSoap.getProperty(4).toString();
-            cli.cuenta = resSoap.getProperty(5).toString();
-            cli.contrasena = resSoap.getProperty(6).toString();
-            cli.nombreCompleto= resSoap.getProperty(7).toString();
-            cli.correo= resSoap.getProperty(8).toString();
+//                cli.idCliente = Integer.parseInt(resSoap.getProperty(0).toString());
+//                cli.primerNombre = resSoap.getProperty(1).toString();
+//                cli.segundoNombre = resSoap.getProperty(2).toString();
+//            cli.primerApellido = resSoap.getProperty(3).toString();
+//            cli.segundoApellido = resSoap.getProperty(4).toString();
+//            cli.cuenta = resSoap.getProperty(5).toString();
+//            cli.contrasena = resSoap.getProperty(6).toString();
+//            cli.nombreCompleto= resSoap.getProperty(7).toString();
+//            cli.correo= resSoap.getProperty(8).toString();
 
 
 
@@ -139,7 +143,7 @@ private class NetworkOperationAsyncTask extends AsyncTask<Void, Void, String> {
     }
 }
 
-    private class TareaWSInsercion2 extends AsyncTask<String,Integer,Boolean> {
+    private class webServicesPut extends AsyncTask<String,Integer,Boolean> {
 
         private Cliente[] listaClientes;
 
@@ -155,15 +159,15 @@ private class NetworkOperationAsyncTask extends AsyncTask<Void, Void, String> {
             SoapObject request = new SoapObject(NAMESPACE, METHOD_NAME);
 
             Cliente cli = new Cliente();
-            cli.idCliente = 123;
-            cli.primerNombre = "monica";
-            cli.segundoNombre= "maria";
-            cli.primerApellido = "morales";
-            cli.segundoApellido = "prueba";
-            cli.cuenta = "moni";
-            cli.contrasena = "pass";
-            cli.nombreCompleto = "maria sala";
-            cli.correo = "sflaldls@prueba";
+//            cli.idCliente = 123;
+//            cli.primerNombre = "monica";
+//            cli.segundoNombre= "maria";
+//            cli.primerApellido = "morales";
+//            cli.segundoApellido = "prueba";
+//            cli.cuenta = "moni";
+//            cli.contrasena = "pass";
+//            cli.nombreCompleto = "maria sala";
+//            cli.correo = "sflaldls@prueba";
 
             PropertyInfo pi = new PropertyInfo();
             pi.setName("cliente");
@@ -177,18 +181,8 @@ private class NetworkOperationAsyncTask extends AsyncTask<Void, Void, String> {
 
             envelope.setOutputSoapObject(request);
 
-//            request.addProperty("segundoNombre", cli.segundoNombre.toString());
-//            request.addProperty("primerNombre", cli.primerNombre.toString());
-//
-//            SoapSerializationEnvelope envelope =
-//                    new SoapSerializationEnvelope(SoapEnvelope.VER11);
-//
-//            envelope.dotNet = true;
-//
-//            envelope.setOutputSoapObject(request);
-//
           envelope.addMapping(NAMESPACE, "Cliente", cli.getClass());
-//
+
           HttpTransportSE transporte = new HttpTransportSE(URL);
 
             try
